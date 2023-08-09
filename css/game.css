@@ -1,0 +1,99 @@
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background: url('../images/princesas-back.jpg') center;
+    background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+ 
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100vw;
+    max-width: 92vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 4vw;
+}
+
+.timer{
+    color: blueviolet;
+    margin-left: -20px;
+}
+
+.player {
+   text-transform: capitalize;
+   letter-spacing: 1px;
+   padding: 5px;
+   background-color: rgba(211, 52, 158, 0.555);
+   border-radius: 5px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 800px;
+    
+    margin: 0 auto;
+}
+
+.card {
+    aspect-ratio: 3/4;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    transition: all 800ms ease;
+    transform-style: preserve-3d;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 2px solid #39813a;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 2500ms ease;
+}
+
+.front {
+    /* background: url('../images/beth.png') center; */
+    background-position: center;
+    background-size: cover;
+    transform: rotatey(180deg);
+    background-color: rgb(231, 144, 159);
+}
+
+.back {
+    background: url('../images/disney-back.png') top;
+    background-size: 100% 100%;
+    backface-visibility: hidden;
+   
+    
+}
+
+/* .card:hover  {
+    transform: rotatey(180deg);
+} */
+.revel-card {
+    transform: rotatey(180deg);
+    
+}
+
+.disabled-card {
+    filter: grayscale(100%);
+    /* opacity: 0.5; */
+}
+
