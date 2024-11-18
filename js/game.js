@@ -1,6 +1,6 @@
-const grid = document.querySelector('.grid');
-const spanPlayer = document.querySelector('.player');
-const timer = document.querySelector('.timer');
+const spanPlayer = document.querySelector('.player'); // primeiro
+const timer = document.querySelector(".timer"); // segundo
+const grid = document.querySelector('.grid'); // terceiro
 
 const characters = [
     'ariel',
